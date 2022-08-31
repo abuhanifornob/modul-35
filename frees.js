@@ -16,6 +16,8 @@ console.log(allVaues);
 const keyValue = Object.entries(person);
 console.log(keyValue);
 
+const { firstName, ...rest } = person;
+console.log(rest);
 // property Delete .......
 delete person.age;
 console.log(person);
